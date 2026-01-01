@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nakul Nibe | Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Small helpers for readable project pages */
+    .project-meta { font-size: 14px; opacity: 0.85; margin-bottom: 8px; }
+    .project-tags span { display: inline-block; margin-right: 8px; margin-bottom: 8px; padding: 4px 10px; border-radius: 18px; background: rgba(0,0,0,0.06); font-size: 12px; }
+    .project-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 22px; }
+    .project-card h3 { margin-bottom: 6px; }
+    .project-card ul { margin-top: 12px; }
+    .project-card ul li { margin-bottom: 8px; text-align: justify; }
+    .project-divider { border-top: 1px solid rgba(255,255,255,0.08); margin: 26px 0; }
+    .btn-linkish { display: inline-block; margin-top: 10px; padding: 10px 14px; border-radius: 8px; background: rgba(255,255,255,0.08); color: #fff; }
+    .btn-linkish:hover { background: rgba(255,255,255,0.12); color: #fff; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Simple top nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Nakul</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Back</span></a></li>
+          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="ftco-section ftco-no-pb" style="padding-top:120px;">
+    <div class="container">
+      <div class="row justify-content-center pb-3">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Projects</h2>
+          <p>A complete list of selected robotics + medical devices + digital health projects. Click a project on the home page to jump here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= -->
+  <!-- Robotics / Perception -->
+  <!-- ========================= -->
+
+  <!-- Vision-Driven Soft Manipulation -->
+  <section class="ftco-section" id="p-soft-manip">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics • Perception • Navigation</div>
+            <h3>Vision-Driven Soft Manipulation: Integrating Soft Robotics and Computer Vision for Environment Interaction</h3>
+            <div class="project-tags">
+              <span>RTAB-Map</span><span>ROS Nav</span><span>RGB-D SLAM</span><span>Detectron2</span><span>VLM Verification</span><span>Soft Gripper</span>
+            </div>
+            <ul>
+              <li>
+                Built a real-time robotic system that performs RGB-D SLAM (RTAB-Map), generates 2D occupancy grids and 3D point-cloud maps, and executes goal-to-goal autonomous navigation using ROS Navigation on a quadruped platform equipped with a soft gripper.
+              </li>
+              <li>
+                Enhanced perception by coupling Detectron2 with GPT-4.1 Vision–style verification for zero-shot validation in low-light/clutter, identifying 41 unique objects compared to 16 (MobileNetV4) and 6 (Detectron2-only) under challenging conditions.
+              </li>
+              <li>
+                Benchmarked YOLOv8 / YOLOv11 / DINO-DETR / Detectron2; achieved 98.6% IoU and 45.45% F1 with DINO-DETR, then selected Detectron2 for a stronger speed–accuracy trade-off for the end-to-end soft-manipulation pipeline.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOLOv8 RGB-D Object Detection & 3D Localization -->
+  <section class="ftco-section" id="p-rgbd-yolo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics • ROS • RGB-D</div>
+            <h3>YOLOv8 RGB-D Object Detection &amp; 3D Localization (RealSense + ROS)</h3>
+            <div class="project-tags">
+              <span>YOLOv8</span><span>Intel RealSense</span><span>ROS</span><span>3D Coordinates</span><span>Dataset Curation</span>
+            </div>
+            <ul>
+              <li>
+                Curated a 10-class household-object dataset (Open Images V7 → Pascal VOC → YOLO) and labeled data with a consistent taxonomy to ensure high-quality training.
+              </li>
+              <li>
+                Trained YOLOv8 with augmentations and hyperparameter tuning; packaged reproducible scripts and model artifacts to enable cross-machine deployment.
+              </li>
+              <li>
+                Integrated YOLOv8 inference with Intel RealSense depth in ROS to compute real-time 3D object coordinates and validated end-to-end performance on live streams.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Classification for VLM-guided Manipulation -->
+  <section class="ftco-section" id="p-material-vlm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics • Manipulation • Vision-Language Models</div>
+            <h3>Object Material Classification for Grounding Vision-Language Models for Robot Manipulation</h3>
+            <div class="project-tags">
+              <span>VLMs</span><span>Material Properties</span><span>Adaptive Gripping</span><span>Safety</span>
+            </div>
+            <ul>
+              <li>
+                Addressed manipulation failures caused by material-dependent behavior (soft/hard/medium objects) by developing a system that predicts material properties to guide safer handling.
+              </li>
+              <li>
+                Leveraged Vision-Language Models (VLMs) to classify object material attributes and support adaptive grip strategies for robust, damage-aware manipulation.
+              </li>
+              <li>
+                Designed the pipeline for deployment-oriented use: material inference → grasp policy selection → safer interaction across diverse objects.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Finger Soft Robotic Hand in MuJoCo -->
+  <section class="ftco-section" id="p-soft-hand-mujoco">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics • Simulation • Perception-to-Simulation</div>
+            <h3>5-Finger Soft Robotic Hand in MuJoCo - Perception-to-Simulation Retargeting</h3>
+            <div class="project-tags">
+              <span>MuJoCo</span><span>MJCF</span><span>MANO</span><span>RGB-D</span><span>Retargeting</span><span>Soft Hand</span>
+            </div>
+            <ul>
+              <li>
+                Built a 5-finger hand simulation in MuJoCo (MJCF) and established a perception-to-simulation pipeline for human-hand pose estimation and robotic hand retargeting.
+              </li>
+              <li>
+                Implemented a CPU-friendly stack combining hand pose/mesh estimation (MANO-based) with RGB-D refinement via Intel RealSense depth alignment and ICP-style refinement.
+              </li>
+              <li>
+                Focused on real-world usability: integrating sensor inputs, validating joint semantics/limits, and preparing the stack for downstream control/RL experiments.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= -->
+  <!-- Medical Devices / Digital Health -->
+  <!-- ========================= -->
+
+  <!-- AI-Assisted Magnetic Intraoral Mandibular Tracking -->
+  <section class="ftco-section" id="p-mandible">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Medical Devices • Digital Health • Manuscript in preparation</div>
+            <h3>AI-Assisted Magnetic Intraoral System for 3-DoF Mandibular Position Tracking</h3>
+            <div class="project-tags">
+              <span>MMC5983MA</span><span>Teensy 4.0</span><span>Robot Ground Truth</span><span>ML Localization</span>
+            </div>
+            <ul>
+              <li>
+                Developed an AI-assisted magnetic sensing and ML framework for accurate 3-DoF mandibular tracking toward intraoral deployment, targeting TMD, orthodontics, and sleep-medicine applications.
+              </li>
+              <li>
+                Built a robot-validated dataset collection pipeline with dense spatial sampling to support learning-based localization under realistic deployment constraints.
+              </li>
+              <li>
+                Manuscript is under preparation; full results and links will be added upon submission/publication.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embedded Urban Snore Detection -->
+  <section class="ftco-section" id="p-osa-snore">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Digital Health • Embedded ML • Audio</div>
+            <h3>Embedded Urban Snore Detection System for Early OSA Screening</h3>
+            <div class="project-tags">
+              <span>ESP32-S3</span><span>Int8 Quantization</span><span>Audio Classifier</span><span>On-device Inference</span>
+            </div>
+            <ul>
+              <li>
+                Developing a snore vs. non-snore audio classifier using a custom urban snoring dataset; achieved 95.2% validation and 83.7% test accuracy on unoptimized float32 models.
+              </li>
+              <li>
+                Deployed and quantized the model (int8) to a Seeed Studio ESP32-S3, meeting embedded constraints with ~243 ms inference latency, ~25.5 KB RAM, and ~60 KB flash usage.
+              </li>
+              <li>
+                Validated on-device performance in realistic noisy environments by collecting snore/non-snore trials and verifying robust inference under resource limitations.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparative Nasal Airflow -->
+  <section class="ftco-section" id="p-nasal-airflow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Medical Devices • Sensing • Validation</div>
+            <h3>Comparative Nasal Airflow Measurement using Flusso &amp; Respiratory Sensors</h3>
+            <div class="project-tags">
+              <span>Flusso MEMS</span><span>Clinical Sensor</span><span>Calibration</span><span>Bland–Altman</span><span>RMSE</span>
+            </div>
+            <ul>
+              <li>
+                Built a dual-sensor pipeline (Flusso MEMS airflow + clinical respiratory sensor) on Windows/Python with live streaming, calibration, and synchronized CSV logging from both nostrils.
+              </li>
+              <li>
+                Running a comparison study across standardized breathing tasks; aligning time-series and reporting agreement metrics (bias, RMSE, Bland–Altman) to evaluate accuracy and repeatability.
+              </li>
+              <li>
+                Focused on practical usability: robust acquisition, synchronization, and evaluation under realistic deployment conditions.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NutriSpecs -->
+  <section class="ftco-section" id="p-nutrispecs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Wearables • Embedded AI • Computer Vision</div>
+            <h3>NutriSpecs - Smart Glasses for Real-Time Food-Intake Detection &amp; Heart-Rate Monitoring</h3>
+            <div class="project-tags">
+              <span>ESP32-S3 Sense</span><span>OV2640</span><span>MAX30102</span><span>YOLOv8-nano</span><span>OpenCV Dashboard</span>
+            </div>
+            <ul>
+              <li>
+                Engineered NutriSpecs on Seeed XIAO ESP32-S3 Sense: integrated OV2640 camera + MAX30102 (I²C), built a non-blocking MJPEG server (port 81) and a JSON BPM endpoint, and tuned firmware (Arduino/ESP-IDF) for low-latency streaming.
+              </li>
+              <li>
+                Trained and deployed a custom YOLOv8-nano model using merged multi-source datasets (Roboflow labeling, Colab GPU fine-tuning) for robust glasses-view fruit detection using Ultralytics/PyTorch inference.
+              </li>
+              <li>
+                Developed a Python/OpenCV dashboard that fuses detections with live heart rate (threaded polling, resilient MJPEG parsing, auto-reconnect, frame downscaling/skipping) to estimate per-event calories/daily totals and correlate intake with HR-derived intensity.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= -->
+  <!-- Prosthetics / Mechatronics -->
+  <!-- ========================= -->
+
+  <!-- Myoelectric Prosthetic Arm -->
+  <section class="ftco-section" id="p-myo-prosthetic">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics &amp; Prosthetics • Published</div>
+            <h3>Design and Development of Low-Cost Myoelectric Prosthetic Arm for Upper-Limb Amputees</h3>
+            <div class="project-tags">
+              <span>EMG</span><span>Embedded Control</span><span>Low-cost Prosthetics</span><span>IEEE</span>
+            </div>
+            <ul>
+              <li>
+                Developed an EMG-driven prosthetic arm using affordable components, enabling functional hand/arm movements for upper-limb amputees with a focus on accessibility and robustness.
+              </li>
+              <li>
+                Designed end-to-end system integration: EMG acquisition → signal processing/control logic → actuation and mechanical implementation for practical motion execution.
+              </li>
+              <li>
+                Published as an IEEE conference paper; see the official listing below.
+              </li>
+            </ul>
+            <a class="btn-linkish" href="https://ieeexplore.ieee.org/abstract/document/10449544" target="_blank" rel="noopener noreferrer">
+              View on IEEE Xplore
+            </a>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Printed & Soft Silicone Prosthetic Hand -->
+  <section class="ftco-section" id="p-soft-prosthetic-hand">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Prosthetics • Soft Materials • Fabrication</div>
+            <h3>3D Printed and Soft Silicone-Moulded Prosthetic Hand</h3>
+            <div class="project-tags">
+              <span>3D Printing</span><span>Silicone Moulding</span><span>EMG Control</span><span>Assistive Tech</span>
+            </div>
+            <ul>
+              <li>
+                Designed and fabricated a prosthetic hand combining 3D-printed parts with soft silicone moulding for compliant, user-friendly interaction.
+              </li>
+              <li>
+                Targeted usability for upper-limb amputees with EMG-driven control concepts (placing EMG sensors on the biceps and controlling the device through muscle activation).
+              </li>
+              <li>
+                Iterated on mechanical design and fabrication to improve comfort, durability, and functional grasp behavior.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Robotic Hand Emulation -->
+  <section class="ftco-section" id="p-hand-emulation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">MedTech • HRI • Wearable Sensing</div>
+            <h3>Robotic Hand (Machines that Emulate Human) - Real-time Hand Emulation</h3>
+            <div class="project-tags">
+              <span>Flex Sensors</span><span>Wearables</span><span>Real-time Mapping</span><span>Robotic Hand</span>
+            </div>
+            <ul>
+              <li>
+                Built a real-time emulation pipeline mapping human finger motion to a robotic hand using wearable flex sensors.
+              </li>
+              <li>
+                Designed the sensing-to-actuation control loop for smooth and responsive motion reproduction.
+              </li>
+              <li>
+                Validated real-time performance through repeated demonstrations and iterative tuning of sensing and mapping.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Robotic Gripper -->
+  <section class="ftco-section" id="p-soft-gripper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">Robotics • Soft Grasping</div>
+            <h3>Soft Robotic Gripper with Suction for Pick-and-Place</h3>
+            <div class="project-tags">
+              <span>Soft Robotics</span><span>Suction</span><span>Pick-and-Place</span><span>Mechatronics</span>
+            </div>
+            <ul>
+              <li>
+                Designed and built a soft gripper integrated with suction air for stable object grasping in pick-and-place scenarios.
+              </li>
+              <li>
+                Developed the actuation and control approach to handle object variability while maintaining reliable grip.
+              </li>
+              <li>
+                Demonstrated prototype performance through repeated task-level trials and iterative hardware tuning.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brain Impact Simulator -->
+  <section class="ftco-section" id="p-brain-impact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">MedTech • Embedded Sensing</div>
+            <h3>Brain Impact Simulator (STEM) - Helmet for Injury Awareness</h3>
+            <div class="project-tags">
+              <span>Embedded</span><span>Sensors</span><span>Safety</span><span>Healthcare</span>
+            </div>
+            <ul>
+              <li>
+                Developed a helmet prototype that detects the most impacted brain lobe in accidents to support faster, more informed response and awareness.
+              </li>
+              <li>
+                Integrated sensors and embedded logic for impact detection and reporting, focusing on practical demonstration and robustness.
+              </li>
+              <li>
+                Validated operation through repeated impact scenarios and iterative calibration/tuning.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wi-Fi Fruit Plucker/Gripper -->
+  <section class="ftco-section" id="p-fruit-plucker">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">AgriTech • IoT • Mechatronics</div>
+            <h3>Wi-Fi-controlled Fruit Plucker/Gripper using ESP32 &amp; 3D Printing</h3>
+            <div class="project-tags">
+              <span>ESP32</span><span>Wi-Fi Control</span><span>3D Printing</span><span>Gripper</span>
+            </div>
+            <ul>
+              <li>
+                Built a multifunctional fruit plucker and gripper operated through mobile Wi-Fi control, designed for versatile field use.
+              </li>
+              <li>
+                Integrated embedded control with mechanical design and 3D-printed parts for rapid iteration and robustness.
+              </li>
+              <li>
+                Demonstrated working prototype performance across basic gripping and plucking scenarios.
+              </li>
+            </ul>
+          </div>
+          <div class="project-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Home Automation using GSM -->
+  <section class="ftco-section" id="p-gsm-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="project-card">
+            <div class="project-meta">IoT • Embedded</div>
+            <h3>Smart Home Automation using GSM (SMS Control)</h3>
+            <div class="project-tags">
+              <span>GSM</span><span>SMS Control</span><span>IoT</span><span>Home Automation</span>
+            </div>
+            <ul>
+              <li>
+                Built a home automation system enabling remote control of appliances using GSM/SMS commands for low-infrastructure environments.
+              </li>
+              <li>
+                Implemented embedded control logic, messaging parsing, and reliable switching behavior for practical demonstrations.
+              </li>
+              <li>
+                Validated end-to-end operation through repeated remote-control tests and failure-mode checks.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Nakul Nibe</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
