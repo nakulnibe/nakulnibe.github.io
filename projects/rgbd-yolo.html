@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nakul Vijay Nibe | YOLOv8 RGB-D Object Detection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* Keep same look as your soft-manipulation page */
+    .project-hero { padding-top: 140px; padding-bottom: 80px; text-align: center; }
+    .project-meta { font-size: 14px; letter-spacing: 0.05em; opacity: 0.75; margin-bottom: 10px; text-transform: uppercase; }
+    .project-title { font-size: 36px; font-weight: 700; line-height: 1.3; }
+    .project-subtitle { font-size: 16px; opacity: 0.8; margin-top: 12px; }
+    .project-section { margin-top: 60px; }
+    .project-divider { border-top: 1px solid rgba(255,255,255,0.08); margin: 70px 0; }
+    .project-tags span {
+      display: inline-block; margin: 6px 6px 0 0; padding: 6px 14px;
+      border-radius: 20px; background: rgba(255,255,255,0.08); font-size: 13px;
+    }
+    .subhead { margin-top: 34px; }
+    .mini-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+    .stack-list li { margin-bottom: 10px; text-align: justify; }
+    .mono-block {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 18px 20px;
+      overflow-x: auto;
+    }
+    .mono-block pre { margin: 0; white-space: pre; }
+    .mono-block code { color: rgba(255,255,255,0.92); }
+
+    /* ✅ VIDEO: smaller + centered */
+    .project-video-wrap{
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 10px;
+      padding: 0 12px;
+    }
+    .project-video{
+      width: 100%;
+      max-width: 860px;           /* <— controls size on desktop */
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+      background: #000;
+    }
+    .project-video video{
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    /* Optional: slightly tighter spacing on small screens */
+    @media (max-width: 576px){
+      .project-title{ font-size: 30px; }
+      .project-video{ max-width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Nakul</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+      <span class="oi oi-menu"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#projects-section" class="nav-link">Back</a></li>
+        <li class="nav-item"><a href="../index.html#contact-section" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="project-hero">
+  <div class="container" data-aos="fade-up">
+    <div class="project-meta">Robotics • ROS • RGB-D</div>
+    <h1 class="project-title">YOLOv8 RGB-D Object Detection &amp; 3D Localization</h1>
+    <p class="project-subtitle">Real-time 3D object localization using Intel RealSense and ROS</p>
+  </div>
+</section>
+
+<!-- ✅ Centered + smaller video -->
+<div class="project-video-wrap" data-aos="zoom-in">
+  <div class="project-video">
+    <video
+      src="../videos/yolov.mp4"
+      controls
+      muted
+      defaultMuted
+      playsinline
+      preload="metadata">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<div class="container project-section">
+
+  <div class="project-tags text-center" data-aos="fade-up">
+    <span>YOLOv8</span><span>Ultralytics</span><span>Intel RealSense</span><span>RGB-D</span><span>ROS</span><span>OpenCV</span><span>PyTorch</span>
+  </div>
+
+  <div class="project-divider"></div>
+
+  <h2 class="mb-3" data-aos="fade-up">Vision-Based Object Detection &amp; Perception for Robotics</h2>
+
+  <h4 class="subhead" data-aos="fade-up">Project Overview</h4>
+  <p style="text-align:justify;" data-aos="fade-up">
+    This project focuses on the design, training, and deployment of a real-time vision-based perception system
+    for robotics using YOLOv8. The goal was to enable robots to perceive, localize, and reason about objects
+    in their environment, forming a reliable perception layer for mobile manipulation and autonomous robotic tasks.
+  </p>
+  <p style="text-align:justify;" data-aos="fade-up">
+    The system was developed and validated on real hardware, integrating RGB and RGB-D cameras with deep learning–based
+    object detection, and extending 2D detections into 3D spatial understanding suitable for robotic interaction.
+  </p>
+
+  <h4 class="subhead" data-aos="fade-up">Problem Statement</h4>
+  <p style="text-align:justify;" data-aos="fade-up">
+    Robotic manipulation and navigation require accurate, real-time understanding of surrounding objects. Classical
+    vision pipelines struggle with robustness, scalability, and real-world variability. This project addresses these
+    challenges by leveraging deep learning–based object detection combined with depth sensing, enabling robots to detect
+    objects, estimate their spatial properties, and use this information for downstream control and decision-making.
+  </p>
+
+  <h4 class="subhead" data-aos="fade-up">What I Built</h4>
+  <p style="text-align:justify;" data-aos="fade-up">
+    I developed an end-to-end object detection and perception pipeline that includes:
+  </p>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Custom YOLOv8 model training for robotics-relevant objects</li>
+    <li>Real-time RGB and RGB-D inference</li>
+    <li>Integration with Intel RealSense cameras</li>
+    <li>Extraction of 3D object position and geometry</li>
+    <li>ROS-compatible perception outputs for robotic systems</li>
+    <li>Readiness for mobile manipulation and autonomous control</li>
+  </ul>
+
+  <div class="project-divider"></div>
+
+  <h3 class="mini-title" data-aos="fade-up">Technical Implementation</h3>
+
+  <h4 class="subhead" data-aos="fade-up">Custom YOLOv8 Training</h4>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Curated and prepared datasets using real-world images and open-source datasets</li>
+    <li>Converted annotations into YOLO format and validated label consistency</li>
+    <li>Trained multiple YOLOv8 models for object detection and geometry-aware perception</li>
+    <li>Tuned hyperparameters such as image resolution, batch size, augmentation, and training epochs</li>
+    <li>Evaluated models using precision, recall, and mAP metrics</li>
+    <li>Performed checkpoint-based training continuation and cross-system model transfer</li>
+  </ul>
+
+  <h4 class="subhead" data-aos="fade-up">Real-Time Object Detection</h4>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Deployed trained YOLOv8 models for live inference on camera streams</li>
+    <li>Achieved real-time detection with bounding boxes, class labels, and confidence scores</li>
+    <li>Optimized inference pipeline for stable frame rates on CPU/GPU systems</li>
+    <li>Verified robustness under varying lighting and scene conditions</li>
+  </ul>
+
+  <h4 class="subhead" data-aos="fade-up">RGB-D &amp; 3D Perception</h4>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Integrated Intel RealSense RGB-D cameras</li>
+    <li>Aligned color and depth streams for accurate spatial mapping</li>
+    <li>Computed object distance and approximate 3D coordinates from depth data</li>
+    <li>Extended 2D detections into 3D object localization for robotic reasoning</li>
+    <li>Enabled geometry-aware perception for manipulation and navigation tasks</li>
+  </ul>
+
+  <h4 class="subhead" data-aos="fade-up">ROS Integration</h4>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Integrated YOLOv8 inference within a ROS-based architecture</li>
+    <li>Published object detections as ROS topics for downstream robotic modules</li>
+    <li>Ensured real-time performance within ROS callback loops</li>
+    <li>Designed perception outputs to be compatible with navigation, planning, and manipulation stacks</li>
+  </ul>
+
+  <div class="project-divider"></div>
+
+  <h3 class="mini-title" data-aos="fade-up">System Architecture</h3>
+
+  <h4 class="subhead" data-aos="fade-up">Perception Pipeline</h4>
+  <div class="mono-block" data-aos="fade-up">
+    <pre><code>Camera (RGB / RGB-D)
+        ↓
+YOLOv8 Object Detection
+        ↓
+Depth & Geometry Estimation
+        ↓
+ROS / Python Perception Interface
+        ↓
+Robot Decision & Control Modules</code></pre>
+  </div>
+
+  <div class="project-divider"></div>
+
+  <h3 class="mini-title" data-aos="fade-up">Applications</h3>
+  <p style="text-align:justify;" data-aos="fade-up">This perception system is designed to support:</p>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Vision-guided robotic manipulation</li>
+    <li>Mobile manipulation on quadruped platforms</li>
+    <li>Autonomous navigation and obstacle awareness</li>
+    <li>Object-aware grasp planning</li>
+    <li>Research in robot perception and human–robot interaction</li>
+  </ul>
+
+  <h3 class="mini-title" data-aos="fade-up">Hardware &amp; Tools</h3>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>YOLOv8 (Ultralytics)</li>
+    <li>Python, OpenCV, PyTorch</li>
+    <li>Intel RealSense RGB-D Camera</li>
+    <li>ROS (Robot Operating System)</li>
+    <li>Linux-based robotic systems</li>
+    <li>MuJoCo (simulation support and validation)</li>
+  </ul>
+
+  <div class="project-divider"></div>
+
+  <h3 class="mini-title" data-aos="fade-up">Key Outcomes</h3>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Developed a robust real-time object detection system for robotics</li>
+    <li>Successfully extended deep learning–based detection to 3D spatial perception</li>
+    <li>Demonstrated reliable operation on real robotic hardware</li>
+    <li>Built a perception pipeline ready for integration with autonomous and semi-autonomous robots</li>
+    <li>Established a strong foundation for vision-guided mobile manipulation</li>
+  </ul>
+
+  <h3 class="mini-title" data-aos="fade-up">Project Significance</h3>
+  <p style="text-align:justify;" data-aos="fade-up">
+    This project bridges the gap between deep learning vision models and real-world robotic systems. By combining YOLOv8
+    with RGB-D sensing and ROS integration, it provides a scalable and deployable perception framework suitable for
+    research, industrial robotics, and healthcare robotics applications.
+  </p>
+
+  <div class="project-divider"></div>
+
+  <p style="text-align:justify;" data-aos="fade-up">
+    This project integrates YOLOv8 object detection with Intel RealSense depth sensing to compute real-time 3D
+    coordinates of detected objects within a ROS framework. A curated dataset and consistent taxonomy enabled reliable
+    training and deployment.
+  </p>
+  <ul class="stack-list" data-aos="fade-up">
+    <li>Curated and labeled a 10-class RGB dataset (Open Images → Pascal VOC → YOLO)</li>
+    <li>Trained YOLOv8 with augmentation and hyperparameter tuning</li>
+    <li>Integrated depth-based 3D localization in ROS</li>
+  </ul>
+
+</div>
+
+<footer class="ftco-footer ftco-section">
+  <div class="container text-center">
+    <p>© <script>document.write(new Date().getFullYear());</script> Nakul Vijay Nibe</p>
+  </div>
+</footer>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init({ once:true, duration:800 });</script>
+
+</body>
+</html>
